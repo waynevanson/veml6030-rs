@@ -1,6 +1,6 @@
 [package]
 name = "veml6030"
-version = "0.1.2" # remember to update html_root_url
+version = "0.1.2"                                                                                                # remember to update html_root_url
 authors = ["Diego Barrios Romero <eldruin@gmail.com>"]
 repository = "https://github.com/eldruin/veml6030-rs"
 license = "MIT OR Apache-2.0"
@@ -18,6 +18,9 @@ coveralls = { repository = "eldruin/veml6030-rs", branch = "master", service = "
 [dependencies]
 embedded-hal = "0.2"
 libm = "0.1"
+
+[patch.crates-io]
+libm = { git = "https://github.com/waynevanson/libm", rev = "65fe339f91b5bcfcfb897eb6ef13cbb6d3461397" }
 
 [dev-dependencies]
 linux-embedded-hal = "0.3"
