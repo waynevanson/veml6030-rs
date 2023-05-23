@@ -17,10 +17,11 @@ coveralls = { repository = "eldruin/veml6030-rs", branch = "master", service = "
 
 [dependencies]
 embedded-hal = "0.2"
-libm = "0.1"
 
-[patch.crates-io]
-libm = { git = "https://github.com/waynevanson/libm", rev = "65fe339f91b5bcfcfb897eb6ef13cbb6d3461397" }
+[dependencies.num]
+version = "0.4.0"
+default-features = false
+features = ["libm"]
 
 [dev-dependencies]
 linux-embedded-hal = "0.3"

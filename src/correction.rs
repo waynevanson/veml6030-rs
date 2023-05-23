@@ -1,7 +1,7 @@
 use crate::{Gain, IntegrationTime};
 // necessary only for targets without math function implementation
 #[allow(unused_imports)]
-use libm::F64Ext;
+use num::Float;
 
 /// Calculate raw value for threshold applying compensation if necessary.
 ///
